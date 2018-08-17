@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:8889
+      profile: dev
+      label: develop
+  application:
+    name: local
+server:
+  port: 2021
