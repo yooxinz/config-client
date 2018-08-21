@@ -8,3 +8,7 @@ spring:
     name: local
 server:
   port: 2021
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/
