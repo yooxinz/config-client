@@ -5,7 +5,7 @@ spring:
       profile: dev
       label: develop
   application:
-    name: local
+    name: config-client
 server:
   port: 2021
 eureka:
