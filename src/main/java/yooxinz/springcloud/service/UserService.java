@@ -7,5 +7,5 @@ import yooxinz.springcloud.dto.User;
  */
 public interface UserService {
 
-    User getUserNameById(int userId);
+    User getUserNameById(Long userId);
 }

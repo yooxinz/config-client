@@ -9,6 +9,6 @@ import yooxinz.springcloud.dto.User;
 @Mapper
 public interface UserMapper {
 
-    User getUserNameById(int userId);
+    User getUserNameById(Long userId);
 
 }
