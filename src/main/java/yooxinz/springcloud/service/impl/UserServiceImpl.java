@@ -1,6 +1,7 @@
 package yooxinz.springcloud.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import yooxinz.springcloud.dto.User;
 import yooxinz.springcloud.mapper.UserMapper;
@@ -18,5 +19,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUserNameById(Long userId) {
         return userMapper.getUserNameById(userId);
+    }
+
+    @Async
+    @Override
+    public void executeAsyncTask(Integer i){
+        System.out.println("执行异步任务" + i);
     }
 }

@@ -54,4 +54,11 @@ public class ConfigController{
         players.forEach(System.out::println);
 
     }
+
+    @RequestMapping("/thread")
+    public void thread(){
+        for (int i=0; i<20; i++){
+            userSerivce.executeAsyncTask(i);
+        }
+    }
 }

@@ -8,4 +8,6 @@ import yooxinz.springcloud.dto.User;
 public interface UserService {
 
     User getUserNameById(Long userId);
+
+    void executeAsyncTask(Integer i);
 }
