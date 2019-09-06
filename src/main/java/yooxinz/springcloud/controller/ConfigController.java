@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import yooxinz.springcloud.service.UserService;
+import lombok.extern.slf4j.Slf4j;
+
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,6 +16,7 @@ import java.util.List;
  * Created by star on 2018/8/17.
  */
 @RestController
+@Slf4j
 public class ConfigController{
 
     @Autowired
@@ -25,7 +28,7 @@ public class ConfigController{
     @RequestMapping("/")
     @ResponseBody
     public String index(){
-
+        log.info("add");
         return userSerivce.getUserNameById((long)1).toString();
     }
 
